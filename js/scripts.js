@@ -1,5 +1,8 @@
 $(document).ready(function() {
-  $("form#form").submit(function(event) {
+  $("form#puzzle").submit(function(event) {
     event.preventDefault();
+    var sentence = $("input#input1").val();
+    
+    $("#output").text(sentence);
   });
 });
